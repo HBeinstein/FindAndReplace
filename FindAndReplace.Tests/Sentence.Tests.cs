@@ -16,7 +16,14 @@ namespace FindAndReplace.Tests
       Sentence Sentence1 = new Sentence(UserInput);
       Assert.AreEqual(UserInput, Sentence1.SentenceInput);
     }
-
+    [TestMethod]
+    public void Sentence_CreateNewSentence_WordReplacew()
+    {
+      string UserInput = "Hello World";
+      Sentence Sentence1 = new Sentence(UserInput);
+      Words newWords = new Words("Hello", "Bye");
+      Assert.AreEqual("Bye World", Sentence1.SentenceInput.Replace(newWords.Replaced, newWords.ReplacedWith));
+    }
   }
 }
 
