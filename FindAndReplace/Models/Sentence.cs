@@ -12,6 +12,9 @@ namespace FindAndReplace.Models
     {
       SentenceInput = input;
     }
-
+    public string Replace()
+    {
+      SentenceInput.Replace(Words.Replaced, Words.ReplacedWith);
+    }
   }
 }
