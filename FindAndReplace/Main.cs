@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using ItemNamespace;
+using FindAndReplace.Models;
 
-namespace ProjectName
+namespace FindAndReplace.Models
 {
-  public class ProjectName
+  public class FindAndReplace
   {
     public static void Main()
     {
