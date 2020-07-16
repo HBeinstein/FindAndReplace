@@ -18,7 +18,8 @@ namespace FindAndReplace.Models
       Sentence UserSentence = new Sentence(Sentence);
       Words UserWords = new Words(WordToFind, WordToReplace);
 
-      string ModSentence = UserSentence.SentenceInput.Replace(UserWords.Replaced, UserWords.ReplacedWith);
+      //string ModSentence = UserSentence.SentenceInput.Replace(UserWords.Replaced, UserWords.ReplacedWith);
+      string ModSentence = UserSentence.ReplaceIt();
       Console.WriteLine(ModSentence);
       
     }

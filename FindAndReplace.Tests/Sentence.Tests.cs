@@ -17,7 +17,7 @@ namespace FindAndReplace.Tests
       Assert.AreEqual(UserInput, Sentence1.SentenceInput);
     }
     [TestMethod]
-    public void Sentence_CreateNewSentence_WordReplacew()
+    public void Sentence_CreateNewSentence_WordReplace()
     {
       string UserInput = "Hello World";
       Sentence Sentence1 = new Sentence(UserInput);
